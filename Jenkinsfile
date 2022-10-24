@@ -11,7 +11,7 @@ pipeline {
     stage("Parallel Stage") {
       parallel {
         stage("Build / Test - JDK17") {
-          agent { node { label 'linux' } }
+          agent { node { label 'linux-new' } }
           steps {
             container('jetty-build') {
               timeout( time: 180, unit: 'MINUTES' ) {
