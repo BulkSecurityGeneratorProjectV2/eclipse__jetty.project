@@ -1012,7 +1012,7 @@ public class DistributionTests extends AbstractJettyHomeTest
     }
 
     @Test
-    @DisabledIfSystemProperty(named = "env", matches = "ci")
+    //@DisabledIfSystemProperty(named = "env", matches = "ci")
     public void testH3() throws Exception
     {
         String jettyVersion = System.getProperty("jettyVersion");

@@ -67,8 +67,8 @@ public class HttpClientLoadTest extends AbstractTest
     public void testIterative(Transport transport) throws Exception
     {
         // TODO: cannot run HTTP/3 (or UDP) in Jenkins.
-        if ("ci".equals(System.getProperty("env")))
-            Assumptions.assumeTrue(transport != Transport.H3);
+//        if ("ci".equals(System.getProperty("env")))
+//            Assumptions.assumeTrue(transport != Transport.H3);
 
         server = newServer();
         server.addBean(new LeakTrackingByteBufferPool(new LogarithmicArrayByteBufferPool()));
