@@ -140,6 +140,7 @@ public class End2EndClientTest
         }
     }
 
+    @Disabled("Flaky test - see Issue #8815")
     @Test
     public void testMultiThreadedHTTP1()
     {
