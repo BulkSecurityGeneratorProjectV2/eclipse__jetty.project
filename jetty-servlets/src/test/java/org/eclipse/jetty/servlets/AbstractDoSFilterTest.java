@@ -40,7 +40,6 @@ import org.eclipse.jetty.util.IO;
 import org.eclipse.jetty.util.component.LifeCycle;
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -214,7 +213,6 @@ public abstract class AbstractDoSFilterTest
         other.join();
     }
 
-    @Disabled("Flaky Test")
     @Test
     public void testUnavailableIP() throws Exception
     {
